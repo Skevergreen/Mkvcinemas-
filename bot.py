@@ -15,9 +15,9 @@ config = configparser.ConfigParser()
 config.read('config.env')
 
 # Get environment variables from config file
-api_id = int(config['Telegram']['7184257'])
-api_hash = config['Telegram']['00db684ac4ab37587f5395581ae3a9c8']
-bot_token = config['Telegram']['5923657056:AAFLJjdE3-NU_xzHaNl0ggRZZR4E8fgz-RA']
+api_id = int(config['Telegram']['API_ID'])
+api_hash = config['Telegram']['API_HASH']
+bot_token = config['Telegram']['BOT_TOKEN']
 
 # Create a new Pyrogram client
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
